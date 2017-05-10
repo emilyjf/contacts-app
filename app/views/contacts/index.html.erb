@@ -4,9 +4,9 @@
 <br>
 
 <% @contacts.each do |contact| %>
-  <%= contact.first_name %><br>
-  <%= contact.last_name %><br>
-  <%= contact.email %><br>
-  <%= contact.phone %><br>
-  <br>
+<h2><a href="/contacts/<%= contact.id %>"><%= contact.first_name %></a></h2>
+<h2><a href="/contact/<%= contact.id %>"<%= contact.last_name %></a></h2>
+<h2><a href="/contact/<%= contact.id %>"<%= contact.email %></a></h2>
+<h2><a href="/contact/<%= contact.id %>"<%= contact.phone %></a></h2>
+<br>
 <% end %>
